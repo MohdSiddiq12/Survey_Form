@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="survey_css.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <h1 id="title">Google</h1>
+    <p id="description">User profile identification survey</p>
+  </header>
+
+  <main>
+    <div class="form-container">
+      <form id="survey-form">
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+        <label for="email">E-Mail</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your E-Mail Address" required><br>
+        <label for="date">Date of Birth</label><br>
+        <input type="date" id="date" name="date" required><br>
+        <label for="dropdown">What is your education level?</label><br>
+        <select id="dropdown" name="education">
+          <option value="" disabled selected>Select an option</option>
+          <option value="primary">Primary School</option>
+          <option value="high">High School</option>
+          <option value="bachelor">Bachelor Degree</option>
+          <option value="master">Master Degree</option>
+          <option value="phd">PhD Degree</option>
+        </select><br>
+        <label for="number">How would you rate Google out of 10?</label><br>
+        <input type="number" id="number" name="rating" min="1" max="10" required><br>
+        <p>How many years of experience do you have in the software industry?</p>
+        <label><input type="radio" name="experience" value="zeroThree">0-3 years</label><br>
+        <label><input type="radio" name="experience" value="threeSix">3-6 years</label><br>
+        <label><input type="radio" name="experience" value="sixNine">6-9 years</label><br>
+        <label><input type="radio" name="experience" value="ninePlus">9+ years</label><br>
+        <p>Which option describes you best?</p>
+        <label><input type="checkbox" name="field" value="frontEnd">Front End Developer</label><br>
+        <label><input type="checkbox" name="field" value="backEnd">Back End Developer</label><br>
+        <label><input type="checkbox" name="field" value="fullStack">Full Stack Developer</label><br>
+        <label><input type="checkbox" name="field" value="mobilDev">Mobile Developer</label><br>
+        <label><input type="checkbox" name="field" value="qaEng">QA Engineer</label><br>
+        <label><input type="checkbox" name="field" value="devopsEng">DevOps Engineer</label><br>
+        <label><input type="checkbox" name="field" value="dataSci">Data Scientist</label><br>
+        <label><input type="checkbox" name="field" value="robotics">Robotics</label><br>
+        <label><input type="checkbox" name="field" value="ai">Artificial Intelligence</label><br>
+        <label><input type="checkbox" name="field" value="cyberSec">Cyber Security Analyst</label><br>
+        <label><input type="checkbox" name="field" value="machineLearn">Machine Learning</label><br>
+        <label><input type="checkbox" name="field" value="desktopDev">Desktop App Developer</label><br><br>
+        <p>Please help us improve with your suggestions!</p>
+        <textarea placeholder="Leave your comment here" id="textarea" name="suggestions"></textarea><br>
+        <input type="submit" id="submit" name="submit">
+      </form>
+    </div>
+  </main>
+
+</body>
+
+</html>
